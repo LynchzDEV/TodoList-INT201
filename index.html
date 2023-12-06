@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List Application</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .Header {
+        text-align: center;
+        color: #2f4f4f;
+      }
+      #addTodo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+      #addTodo input {
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        margin-right: 10px;
+      }
+      #addBtn {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #2f4f4f;
+        color: #fff;
+        cursor: pointer;
+      }
+      #listTodo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .todo {
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+      }
+      .todo p {
+        margin: 0;
+      }
+      .todo button {
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #2f4f4f;
+        color: #fff;
+        cursor: pointer;
+      }
+      #summaryTodo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="addTodo">
+        <h2>Add Your Todo:</h2>
+        <input placeholder="Add Todo" />
+        <button id="addBtn">Add</button>
+      </div>
+      <h1 class="Header">Your Todo list</h1>
+      <div id="listTodo"></div>
+      <div id="summaryTodo">
+        <p id="done">Number of Done: </p> 
+        <p id="notDone">Number of Not Done: </p>
+      </div>
+    </div> 
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
